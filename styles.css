@@ -1,0 +1,343 @@
+/* Custom Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Top Navigation Bar Styles */
+.navbar-top {
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.navbar-top .nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    padding: 8px 15px !important;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-top .nav-link:hover,
+.navbar-top .nav-link.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.navbar-top .navbar-nav {
+    gap: 5px;
+}
+
+.navbar-top .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-top .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 500px;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-50 {
+    min-height: 500px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Carousel Styles */
+.carousel-section {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    padding: 60px 0;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transform: none;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+}
+
+/* Product Card Styles */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    border: 1px solid #dee2e6;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+/* About Page Styles */
+.about-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* Contact Form Styles */
+#contactForm {
+    max-width: 600px;
+}
+
+/* Features Section */
+.features-section {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* Featured Products */
+.featured-products {
+    background-color: #ffffff;
+}
+
+/* Special Offer Section */
+.special-offer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    margin: 40px 0;
+}
+
+.offer-badge {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Footer Styles */
+.footer-bottom {
+    margin-top: auto;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+}
+
+.footer-logo {
+    height: 35px;
+    width: auto;
+}
+
+.footer-bottom h5,
+.footer-bottom h6 {
+    color: #fff;
+}
+
+.footer-bottom a {
+    transition: all 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #667eea !important;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Additional Enhancements */
+.special-offer .container {
+    padding: 40px 20px;
+}
+
+.hero-section h2 {
+    animation: fadeInUp 1s ease;
+}
+
+.hero-section p {
+    animation: fadeInUp 1.2s ease;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1.4s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-overlay {
+        min-height: 400px;
+    }
+    
+    .min-vh-50 {
+        min-height: 400px;
+    }
+    
+    .brand-text {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-logo {
+        height: 35px;
+    }
+    
+    .navbar-top .nav-link {
+        padding: 6px 12px !important;
+        font-size: 0.9rem;
+    }
+    
+    .special-offer h2 {
+        font-size: 1.8rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+    
+    .footer-bottom .col-lg-2,
+    .footer-bottom .col-lg-3,
+    .footer-bottom .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+}
+
